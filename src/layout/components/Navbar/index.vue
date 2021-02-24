@@ -11,6 +11,7 @@
       class="breadcrumb-container"
     />
     <div class="right-menu" id="right-menu">
+      <header-search/>
       <el-dropdown
         class="avatar-container right-menu-item hover-effect"
         trigger="click"
@@ -62,12 +63,14 @@ import { AppModule } from '@/store/modules/app'
 import { UserModule } from '@/store/modules/user'
 import Breadcrumb from '@/components/Breadcrumb/index.vue'
 import Hamburger from '@/components/Hamburger/index.vue'
+import HeaderSearch from '@/components/HeaderSearch/index.vue'
 
 @Component({
   name: 'Navbar',
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
+    HeaderSearch
   }
 })
 export default class extends Vue {
